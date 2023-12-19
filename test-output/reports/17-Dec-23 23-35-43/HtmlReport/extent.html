@@ -1,0 +1,1332 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Nopcommerce Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Dec 17, 2023 11:35:43 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Dec 17, 2023 11:35:43 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Dec 17, 2023 11:36:18 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>3</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>3</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='14%'><b>1</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='85%'><b>6</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='32%'><b>28</b> steps passed</small></div>
+<div>
+<small data-tooltip='6%'><b>6</b> steps failed,
+<b>52</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"ComputerPage Test":15.035,"Electronics Test":8.975,"Homepage Test":10.516
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@regression</td>
+<td>1</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>14.286%</td>
+</tr>
+<tr>
+<td>@sanity</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>33.333%</td>
+</tr>
+<tr>
+<td>@smoke</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Engineer</td>
+<td>Jay Vaghani</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>Nop commerce</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 3,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 1,
+failChild: 6,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 28,
+failGrandChild: 6,
+warningGrandChild: 0,
+skipGrandChild: 52,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@sanity</a><a class="dropdown-item" href="#">@smoke</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ComputerPage Test</p>
+            <p class="text-sm">
+              <span>23:35:43</span> / <span>00:00:15:035</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">ComputerPage Test</h5>
+<span class='badge badge-success'>12.17.2023 23:35:43</span>
+<span class='badge badge-danger'>12.17.2023 23:35:58</span>
+<span class='badge badge-default'>00:00:15:035</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user I want to arrange products and add them to shopping cart successfully</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User can arrange the products in alphabetical order</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.HomePageSteps.iAmOnHomepage()">
+                <span>Given I am on homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iClickOnComputer()">
+                <span>When I click on computer</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iClickOnDesktop()">
+                <span>And I click on desktop</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iSelectSortByPositionNameZToA()">
+                <span>And I select sort by position Name: Z to A</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.ComputerSteps.verifyTheProductWillArrangeInDescendingOrder()">
+                <span>Then Verify the Product will arrange in Descending order</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log fail-bg mr-2">Fail</span>User can add the products to shopping cart successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.HomePageSteps.iAmOnHomepage()">
+                <span>Given I am on homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iClickOnComputer()">
+                <span>When I click on computer</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iClickOnDesktop()">
+                <span>And I click on desktop</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iSelectSortByPositionNameAToZ()">
+                <span>And I select sort by position Name: A to Z</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.ComputerSteps.clickOnAddToCart()">
+                <span>And CLick on Add to cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.nopcommerce.demo.steps.ComputerSteps.verifyTheTextBuildYourOwnComputer()">
+                <span>And Verify the Text Build your own computer</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Build your own computer expected [Build your own computer] but found [Build your own computer message is not displayed]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.nopcommerce.demo.steps.ComputerSteps.verifyTheTextBuildYourOwnComputer(ComputerSteps.java:42)
+	at ✽.Verify the Text Build your own computer(file:///C:/Users/jayni/IdeaProjects/project-1-nop-commerce-demo-sw-6/src/test/resources/features/computerpage.feature:19)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanSelectProcessor(java.lang.String)">
+                <span>And I can Select processor "2.2 GHz Intel Pentium Dual-Core E2200"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanSelectRam(java.lang.String)">
+                <span>And I can Select ram "8GB [+$60.00]"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanSelectHDDRadio(java.lang.String)">
+                <span>And I can Select HDD radio "400 GB [+$100.00]"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanSelectOSRadio(java.lang.String)">
+                <span>And I can Select OS radio "Vista Premium [+$60.00]"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanSelectCheckBox(java.lang.String)">
+                <span>And I can Select check box "Total Commander"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.verifyThePrice(java.lang.String)">
+                <span>And Verify the price "$1,475.00"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanClickOnAddToCartButton()">
+                <span>And I can Click on add to cart button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.verifyTheMessageOnTopGreenBar(java.lang.String)">
+                <span>And Verify the Message "The product has been added to your shopping cart" on Top green Bar</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanCloseTheBarClickingOnCloseButton()">
+                <span>And I can close the bar clicking on close button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanMouseHoverOnShoppingCartAndClickOnGOTOCARTButton()">
+                <span>And I can MouseHover on Shopping cart and Click on GO TO CART button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanVerifyTheMessage(java.lang.String)">
+                <span>And I can Verify the message "Shopping cart"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanChangeTheQtyToAndClickOnUpdateShoppingCart(java.lang.String)">
+                <span>And I can change the Qty to "2" and Click on Update shopping cart</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.verifyTheTotal(java.lang.String)">
+                <span>And Verify the Total "$2,950.00"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanClickOnCheckboxIAgreeWithTheTermsOfService()">
+                <span>And I can click on checkbox I agree with the terms of service</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanClickOnCheckout()">
+                <span>And I can click on checkout</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.verifyTheText(java.lang.String)">
+                <span>And Verify the Text "Welcome, Please Sign In!"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanClickOnCheckoutAsAGuestTab()">
+                <span>And I can click on checkout as a guest tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanFillAllMandatoryField()">
+                <span>And I can fill all mandatory field</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanClickOnNextDayAirRadioButton()">
+                <span>And I can click on next day air radio button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.clickOnContinue()">
+                <span>And Click on continue</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.selectCreditCardRadioButton()">
+                <span>And Select credit card radio button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.clickOnTheContinue()">
+                <span>And Click on the continue</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanSelectMasterCard()">
+                <span>And I can select master card</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanFillAllMandatoryFieldForPayment()">
+                <span>And I can fill all mandatory field for payment</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.verifyPaymentMethodIs(java.lang.String)">
+                <span>And Verify payment method is "Credit Card"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.verifyShippingMethodIs(java.lang.String)">
+                <span>And Verify shipping method is "Next Day Air"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanClickOnConfirmButton()">
+                <span>And I can click on confirm button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.iCanVerifyText(java.lang.String)">
+                <span>And I can Verify text "Thank you"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.verifyTheMessage(java.lang.String)">
+                <span>And Verify the message "Your order has been successfully processed!"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.clickOnTheContinueButton()">
+                <span>And Click on the continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ComputerSteps.verifyText(java.lang.String)">
+                <span>Then Verify text "Welcome to our store"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.nopcommerce.demo.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>User can add the products to shopping cart successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded1.png' src="../screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="50"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Electronics Test</p>
+            <p class="text-sm">
+              <span>23:35:58</span> / <span>00:00:08:975</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Electronics Test</h5>
+<span class='badge badge-success'>12.17.2023 23:35:58</span>
+<span class='badge badge-danger'>12.17.2023 23:36:07</span>
+<span class='badge badge-default'>00:00:08:975</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=50</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user I can navigate to any product page and place the order successfully</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="51"><span class="badge log fail-bg mr-2">Fail</span>User can navigate to cell phones page successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.HomePageSteps.iAmOnHomepage()">
+                <span>Given I am on homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iCanMouseHoverOnElectronicsTab()">
+                <span>When I can mouse hover on electronics tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iCanMouseHoverOnCellPhonesAndClick()">
+                <span>And I can mouse hover on cell phones and click</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iCanVerifyTheText(java.lang.String)">
+                <span>Then I can verify the text "Cell phones"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Cell phones expected [Cell phones] but found [Cell phones text is not displayed]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.nopcommerce.demo.steps.ElectronicsSteps.iCanVerifyTheText(ElectronicsSteps.java:21)
+	at ✽.I can verify the text "Cell phones"(file:///C:/Users/jayni/IdeaProjects/project-1-nop-commerce-demo-sw-6/src/test/resources/features/electronics.feature:9)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.nopcommerce.demo.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>User can navigate to cell phones page successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded2.png' src="../screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="58"><span class="badge log fail-bg mr-2">Fail</span>User can add the product and place the order successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.HomePageSteps.iAmOnHomepage()">
+                <span>Given I am on homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iCanMouseHoverOnElectronicsTab()">
+                <span>When I can mouse hover on electronics tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iCanMouseHoverOnCellPhonesAndClick()">
+                <span>And I can mouse hover on cell phones and click</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iCanVerifyTheText(java.lang.String)">
+                <span>And I can verify the text "Cell phones"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Cell phones expected [Cell phones] but found [Cell phones text is not displayed]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.nopcommerce.demo.steps.ElectronicsSteps.iCanVerifyTheText(ElectronicsSteps.java:21)
+	at ✽.I can verify the text "Cell phones"(file:///C:/Users/jayni/IdeaProjects/project-1-nop-commerce-demo-sw-6/src/test/resources/features/electronics.feature:16)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldClickOnListViewTab()">
+                <span>And I should click on list view tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldClickOnNokiaLumiaProduct()">
+                <span>And I should click on nokia lumia product</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.verifyTheText(java.lang.String)">
+                <span>And Verify the text "Nokia Lumia 1020"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldVerifyThePrice(java.lang.String)">
+                <span>And I should verify the price "$349.00"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldChangeTheQuantityTo(int)">
+                <span>And I should change the quantity to 2</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldClickOnAddToCartTab()">
+                <span>And I should click on add to cart tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldVerifyTheMessageOnTopGreenBar(java.lang.String)">
+                <span>And I should Verify the Message "The product has been added to your shopping cart" on Top green Bar</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldClickOnCloseButton()">
+                <span>And I should click on close button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldMouseHoverOnShoppingCartAndClickOnGoToCartButton()">
+                <span>And I should mouse hover on shopping cart and click on go to cart button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldVerifyMsg(java.lang.String)">
+                <span>And I should verify msg "Shopping cart"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldVerifyTheQuantity(int)">
+                <span>And I should verify the quantity 2</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldVerifyTotal(java.lang.String)">
+                <span>And I should verify total "$698.00"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldClickOnTheCheckboxOfAgreeTermsOfService()">
+                <span>And I should click on the checkbox of agree terms of service</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldClickOnTheCheckout()">
+                <span>And I should click on the checkout</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldVerifyText(java.lang.String)">
+                <span>And I should verify text "Welcome, Please Sign In!"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldClickOnRegisterTab()">
+                <span>And I should click on register tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldVerify(java.lang.String)">
+                <span>And I should verify "Register"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldAbleToFillAllMandatoryFields()">
+                <span>And I should able to fill all mandatory fields</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldClickOnRegisterButton()">
+                <span>And I should click on register button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.verifyMessage(java.lang.String)">
+                <span>And Verify message "Your registration completed"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.nopcommerce.demo.steps.ElectronicsSteps.iShouldClickOnContinueTab()">
+                <span>And I should click on continue tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.nopcommerce.demo.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>User can add the product and place the order successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded3.png' src="../screenshots/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="86"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Homepage Test</p>
+            <p class="text-sm">
+              <span>23:36:07</span> / <span>00:00:10:516</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Homepage Test</h5>
+<span class='badge badge-success'>12.17.2023 23:36:07</span>
+<span class='badge badge-danger'>12.17.2023 23:36:18</span>
+<span class='badge badge-default'>00:00:10:516</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=86</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user I can navigate to various pages successfully</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="87"><span class="badge log fail-bg mr-2">Fail</span>User can navigate to Computer page successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.HomePageSteps.iAmOnHomepage()">
+                <span>Given I am on homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.HomePageSteps.iSelectComputers()">
+                <span>When I select computers</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.nopcommerce.demo.steps.HomePageSteps.computersTextDisplayed()">
+                <span>Then Computers text displayed</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Computers expected [Computers] but found [Computers text is not displayed]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.nopcommerce.demo.steps.HomePageSteps.computersTextDisplayed(HomePageSteps.java:23)
+	at ✽.Computers text displayed(file:///C:/Users/jayni/IdeaProjects/project-1-nop-commerce-demo-sw-6/src/test/resources/features/homepage.feature:8)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.nopcommerce.demo.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>User can navigate to Computer page successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded4.png' src="../screenshots/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="93"><span class="badge log fail-bg mr-2">Fail</span>User can navigate to Electronics page successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.HomePageSteps.iAmOnHomepage()">
+                <span>Given I am on homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.HomePageSteps.iSelectElectronics()">
+                <span>When I select electronics</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.nopcommerce.demo.steps.HomePageSteps.electronicsTextDisplayed()">
+                <span>Then Electronics text displayed</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Electronics expected [Electronics] but found [Electronics is not displayed]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.nopcommerce.demo.steps.HomePageSteps.electronicsTextDisplayed(HomePageSteps.java:33)
+	at ✽.Electronics text displayed(file:///C:/Users/jayni/IdeaProjects/project-1-nop-commerce-demo-sw-6/src/test/resources/features/homepage.feature:14)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.nopcommerce.demo.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>User can navigate to Electronics page successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded5.png' src="../screenshots/embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="99"><span class="badge log fail-bg mr-2">Fail</span>User can navigate to Apparel page successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.HomePageSteps.iAmOnHomepage()">
+                <span>Given I am on homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.nopcommerce.demo.steps.HomePageSteps.iSelectApparel()">
+                <span>When I select apparel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.nopcommerce.demo.steps.HomePageSteps.apparelTextDisplayed()">
+                <span>Then Apparel text displayed</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Apparel expected [Apparel] but found [Apparel is not displayed]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.nopcommerce.demo.steps.HomePageSteps.apparelTextDisplayed(HomePageSteps.java:43)
+	at ✽.Apparel text displayed(file:///C:/Users/jayni/IdeaProjects/project-1-nop-commerce-demo-sw-6/src/test/resources/features/homepage.feature:20)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.nopcommerce.demo.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>User can navigate to Apparel page successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded6.png' src="../screenshots/embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>6</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>6 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:35:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User can arrange the products in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">ComputerPage Test.User can arrange the products in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:35:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>User can add the products to shopping cart successfully</a>
+<div class="">
+<span class="badge badge-default">ComputerPage Test.User can add the products to shopping cart successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:35:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='50' id='51'>User can navigate to cell phones page successfully</a>
+<div class="">
+<span class="badge badge-default">Electronics Test.User can navigate to cell phones page successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:36:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='50' id='58'>User can add the product and place the order successfully</a>
+<div class="">
+<span class="badge badge-default">Electronics Test.User can add the product and place the order successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:36:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='86' id='87'>User can navigate to Computer page successfully</a>
+<div class="">
+<span class="badge badge-default">Homepage Test.User can navigate to Computer page successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:36:11 pm</td>
+<td>
+<a href="#" class="linked" test-id='86' id='93'>User can navigate to Electronics page successfully</a>
+<div class="">
+<span class="badge badge-default">Homepage Test.User can navigate to Electronics page successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:36:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='86' id='99'>User can navigate to Apparel page successfully</a>
+<div class="">
+<span class="badge badge-default">Homepage Test.User can navigate to Apparel page successfully</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@sanity</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@sanity</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:35:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User can arrange the products in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">ComputerPage Test.User can arrange the products in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:35:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='50' id='51'>User can navigate to cell phones page successfully</a>
+<div class="">
+<span class="badge badge-default">Electronics Test.User can navigate to cell phones page successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:36:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='86' id='87'>User can navigate to Computer page successfully</a>
+<div class="">
+<span class="badge badge-default">Homepage Test.User can navigate to Computer page successfully</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:35:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>User can add the products to shopping cart successfully</a>
+<div class="">
+<span class="badge badge-default">ComputerPage Test.User can add the products to shopping cart successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:36:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='50' id='58'>User can add the product and place the order successfully</a>
+<div class="">
+<span class="badge badge-default">Electronics Test.User can add the product and place the order successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:36:11 pm</td>
+<td>
+<a href="#" class="linked" test-id='86' id='93'>User can navigate to Electronics page successfully</a>
+<div class="">
+<span class="badge badge-default">Homepage Test.User can navigate to Electronics page successfully</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>6</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>6 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:35:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>And Verify the Text Build your own computer</a>
+<div class="">
+<span class="badge badge-default">ComputerPage Test.User can add the products to shopping cart successfully.And Verify the Text Build your own computer</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:36:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='50' id='56'>Then I can verify the text "Cell phones"</a>
+<div class="">
+<span class="badge badge-default">Electronics Test.User can navigate to cell phones page successfully.Then I can verify the text "Cell phones"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:36:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='50' id='63'>And I can verify the text "Cell phones"</a>
+<div class="">
+<span class="badge badge-default">Electronics Test.User can add the product and place the order successfully.And I can verify the text "Cell phones"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:36:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='86' id='91'>Then Computers text displayed</a>
+<div class="">
+<span class="badge badge-default">Homepage Test.User can navigate to Computer page successfully.Then Computers text displayed</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:36:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='86' id='97'>Then Electronics text displayed</a>
+<div class="">
+<span class="badge badge-default">Homepage Test.User can navigate to Electronics page successfully.Then Electronics text displayed</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:36:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='86' id='103'>Then Apparel text displayed</a>
+<div class="">
+<span class="badge badge-default">Homepage Test.User can navigate to Apparel page successfully.Then Apparel text displayed</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
